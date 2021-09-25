@@ -22,7 +22,7 @@ while True:
                 h, w, c = img.shape
                 cx, cy = int(lm.x*w), int(lm.y*h)
                 #print(id,cx,cy)
-                if id==4:
+                if id==4: #here you can use any landmarks you want in the condition for making a circle on landmarks
                     cv2.circle(img, (cx, cy), 15, (255, 0, 0), cv2.FILLED)
 
             mpDraw.draw_landmarks(img,handLms,mpHands.HAND_CONNECTIONS)
