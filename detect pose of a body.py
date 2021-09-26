@@ -12,7 +12,7 @@ while True:
     success, img = capture.read()
     imgRGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     results = pose.process(imgRGB)
-    print(results)
+    
     if results.pose_landmarks:
         mpDraw.draw_landmarks(img,results.pose_landmarks,mpPose.POSE_CONNECTIONS)
 
