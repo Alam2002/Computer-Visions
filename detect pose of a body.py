@@ -7,6 +7,7 @@ mpPose = mp.solutions.pose
 pose = mpPose.Pose()
 mpDraw = mp.solutions.drawing_utils
 pTime = 0
+cTime = 0
 
 while True:
     success, img = capture.read()
